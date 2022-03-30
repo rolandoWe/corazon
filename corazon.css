@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    background-color: rgb(228, 222, 227);
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.caja{
+    width:200px;
+    height:200px;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    animation: animar 2.5s infinite linear;
+    animation-delay: 5s;
+}
+.mensaje{
+    /* background-color: green; */
+    z-index:100;
+    width:100%;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    letter-spacing: 3px;
+    animation: sipa 2.5s linear infinite;
+}
+@keyframes sipa{
+    0%{opacity:1}
+    50%{opacity:0}
+    100%{opacity:1}
+}
+
+@keyframes animar{
+0%{transform: scale(1);}
+50%{transform: scale(.8);}
+100%{transform: scale(1);}
+}
+
+.corazon{
+    width:100px;
+    height: 100px;
+    position: relative;
+    transform: rotatez(45deg);
+    background-color: red;
+    position: absolute;
+}
+.corazon::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-55px;
+    background-color: red;
+}
+.corazon::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -55px;
+    background-color: red;
+}
+/* corazon 2 */
+.caja2{
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translatex(1000px);
+    animation: animar2 2s infinite linear; 
+    animation-delay: 4.5;
+}
+.corazon2{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: rgb(255, 0, 0);
+}
+@keyframes animar2{
+    0%{transform: translateX(1000px) scale(.1);opacity: 0;}
+    100%{transform: translateX(50px) scale(1);opacity: 1;}
+    }
+.corazon2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 3 */
+.caja3{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translatex(-1000px);
+    animation: animar3 2.5s infinite linear; 
+    animation-delay: 4s;
+}
+.corazon3{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: red;
+    /* animation: animar2 linear infinite 3s; */
+}
+@keyframes animar3{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    50%{transform: translateX(-1200px) scale(.1);opacity: 0;}
+    100%{transform: translateX(-50px) scale(1);opacity: 1;}
+    }
+.corazon3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 4 */
+.caja4{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translatex(0px);
+    animation: animar4 3s infinite linear; 
+    animation-delay: 3.5;
+}
+.corazon4{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: rgb(255, 0, 0);
+}
+@keyframes animar4{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translateY(-900px) scale(.1);opacity: 0;}
+    100%{transform: translateX(0px) scale(1);opacity: 1;}
+    }
+.corazon4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 5 */
+.caja5{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translate(0px,200px);
+    animation: animar5 2s infinite linear; 
+    animation-delay: 3s;
+}
+.corazon5{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: rgb(253, 0, 0);
+}
+@keyframes animar5{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translateY(900px) scale(.1);opacity: 0;}
+    100%{transform: translateX(0px) scale(1);opacity: 1;}
+    }
+.corazon5::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon5::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 6 */
+.caja6{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translate(800px,-400px);
+    animation: animar6 2s infinite linear; 
+    animation-delay: 2.5;
+}
+.corazon6{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: red;
+}
+@keyframes animar6{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translate(1000px,-400px) scale(.1);opacity: 0;}
+    100%{transform: translate(-50px) scale(1);opacity: 1;}
+    }
+.corazon6::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon6::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 7 */
+.caja7{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translate(-1000px,-400px);
+    animation: animar7 2s infinite linear; 
+    animation-delay: 2s;
+}
+.corazon7{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: red;
+}
+@keyframes animar7{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translate(-1000px,-400px) scale(.1);opacity: 0;}
+    100%{transform: translate(-50px) scale(1);opacity: 1;}
+    }
+.corazon7::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon7::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 8 */
+.caja8{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translate(-500px,200px);
+    animation: animar8 2s infinite linear; 
+    animation-delay: 1.5s;
+}
+.corazon8{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: red;
+}
+@keyframes animar8{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translate(-1000px,400px) scale(.1);opacity: 0;}
+    100%{transform: translate(-50px) scale(1);opacity: 1;}
+    }
+.corazon8::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon8::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* corazon 9 */
+.caja9{
+    position:absolute;
+    width:100px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: translate(500px,200px);
+    animation: animar9 2s infinite linear; 
+    animation-delay: 1s;
+}
+.corazon9{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    transform: rotatez(45deg);
+    background-color: red;
+}
+@keyframes animar9{
+    /* 0%{transform: translateX(-500px) scale(.1);opacity: 0;} */
+    0%{transform: translate(1000px,400px) scale(.1);opacity: 0;}
+    100%{transform: translate(-50px) scale(1);opacity: 1;}
+    }
+.corazon9::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotatez(-20deg);
+    border-radius: 50%;
+    top:-25px;
+    background-color: red;
+}
+.corazon9::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: -25px;
+    background-color: red;
+}
+/* @media (max-width:576px){
+    .corazon2,
+    .corazon3,
+    .corazon4,
+    .corazon5,
+    .corazon6,
+    .corazon7,
+    .corazon8,
+    .corazon9{
+        width: 25px;
+        height: 25px;
+    }
+
+} */
